@@ -1,0 +1,11 @@
+name: ShoobadomChatBubbles
+version: '${project.version}'
+main: me.shoobadom.chat.Chat
+api-version: '1.20'
+authors: [ Shoobadom ]
+description: Text bubbles
+commands:
+  chatbubbles:
+    description: Use /chatbubbles help for information
+    usage: /<command>
+    aliases: [cb, chatb]

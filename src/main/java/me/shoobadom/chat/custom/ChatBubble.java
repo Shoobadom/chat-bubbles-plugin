@@ -8,10 +8,8 @@ import org.bukkit.util.Transformation;
 import org.joml.AxisAngle4f;
 import org.joml.Vector3f;
 
-import java.util.HashMap;
-
 public class ChatBubble {
-    private final HashMap<TextDisplay,Integer> chat = new HashMap<TextDisplay,Integer>();
+
     private final TextDisplay[] bubbles = new TextDisplay[Math.max(1,Files.getInt("bubble-count"))];
     private final int[] dur = new int[bubbles.length];
     private final Player p;
@@ -44,7 +42,7 @@ public class ChatBubble {
         td.setBillboard(Display.Billboard.VERTICAL);
         td.setTransformation(new Transformation(new Vector3f(0F,plrAdjustment,0F),new AxisAngle4f(),new Vector3f(1,1,1),new AxisAngle4f()));
 
-        chat.put(td,0);
+
         bubbles[0]=td;
         dur[0]=0;
         p.addPassenger(bubbles[0]);

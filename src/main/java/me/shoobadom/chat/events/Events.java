@@ -4,7 +4,6 @@ package me.shoobadom.chat.events;
 import me.shoobadom.chat.custom.Files;
 import me.shoobadom.chat.scheduler.tick;
 import org.bukkit.Material;
-import org.bukkit.entity.TextDisplay;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
@@ -13,12 +12,8 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerPortalEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-import java.util.HashMap;
-import java.util.UUID;
-
 
 public class Events implements Listener {
-    private final HashMap<UUID, TextDisplay[]> plrChats = new HashMap<UUID, TextDisplay[]>();
 
     @EventHandler
     public void plrChat(AsyncPlayerChatEvent event) {

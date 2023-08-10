@@ -7,7 +7,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
 public class MainCommand implements CommandExecutor {
-    private Chat instance = Chat.getInstance();
+    private final Chat instance = Chat.getInstance();
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (!sender.isOp()) {

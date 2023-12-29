@@ -1,7 +1,7 @@
 package me.shoobadom.chat.scheduler;
 
 
-import me.shoobadom.chat.Chat;
+import me.shoobadom.chat.ChatBubbles;
 import me.shoobadom.chat.custom.ChatBubble;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitScheduler;
@@ -17,7 +17,7 @@ public class tick {
     private static final HashMap<UUID,ChatBubble> plrChat = new HashMap<>();
 
 
-    private final static Plugin plugin = Chat.getInstance();
+    private final static Plugin plugin = ChatBubbles.getInstance();
     public static void enableTick() {
         BukkitScheduler scheduler = plugin.getServer().getScheduler();
         scheduler.scheduleSyncRepeatingTask(plugin, () -> {

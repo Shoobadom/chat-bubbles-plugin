@@ -52,8 +52,6 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
-
-                            <outputFile>C:\Users\Samuel\Documents\Eclipse\.Server 1.20.1.2\plugins\${project.name}.jar</outputFile>
                         </configuration>
                     </execution>
                 </executions>

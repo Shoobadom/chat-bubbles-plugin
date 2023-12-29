@@ -11,8 +11,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 
 
-public final class Chat extends JavaPlugin {
-    private static Chat instance;
+public final class ChatBubbles extends JavaPlugin {
+    private static ChatBubbles instance;
 
     @Override
     public void onEnable() {
@@ -35,7 +35,7 @@ public final class Chat extends JavaPlugin {
         }
     }
 
-    public static Chat getInstance() {
+    public static ChatBubbles getInstance() {
         return instance;
     }
 }

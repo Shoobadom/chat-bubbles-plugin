@@ -3,3 +3,4 @@ delay: 10.0
 distance-between-bubbles: 0.1
 bubble-offset-from-player: 0.0
 display-message-in-chat: true
+message-format: "%message%"

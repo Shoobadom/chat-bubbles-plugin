@@ -22,7 +22,7 @@ public class ChatBubble {
     public ChatBubble(Player player, String msg) {
         p = player;
 
-        newChat(msg);
+        newChat(Files.getString("message-format").replace("%message%", msg));
     }
 
     public void newChat(String msg) {

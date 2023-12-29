@@ -65,4 +65,7 @@ public class Files {
     public static boolean getBool(String key) {
         return instance.getConfig().getBoolean(key);
     }
+    public static String getString(String key) {
+        return instance.getConfig().getString(key);
+    }
 }

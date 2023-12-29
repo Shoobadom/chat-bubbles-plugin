@@ -23,10 +23,11 @@ public class ChatBubble {
     public ChatBubble(Player player, String msg) {
         p = player;
 
-        newChat(Files.getString("message-format").replace("%message%", msg));
+        newChat(msg);
     }
 
     public void newChat(String msg) {
+        msg = Files.getString("message-format").replace("%message%", msg);
 
         if (bubbles[bubbles.length-1] != null) {
             bubbles[bubbles.length-1].remove();

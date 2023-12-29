@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.shoobadom</groupId>
-    <artifactId>Chat</artifactId>
+    <artifactId>ChatBubbles</artifactId>
     <version>1.1</version>
     <packaging>jar</packaging>
 

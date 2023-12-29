@@ -1,6 +1,6 @@
-package me.shoobadom.chat.commands;
+package me.shoobadom.chatbubbles.commands;
 
-import me.shoobadom.chat.ChatBubbles;
+import me.shoobadom.chatbubbles.ChatBubbles;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

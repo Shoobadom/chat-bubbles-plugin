@@ -1,10 +1,11 @@
-package me.shoobadom.chat.events;
+package me.shoobadom.chatbubbles.events;
 
 
-import me.shoobadom.chat.custom.Files;
-import me.shoobadom.chat.scheduler.tick;
+import me.shoobadom.chatbubbles.custom.Files;
+import me.shoobadom.chatbubbles.scheduler.tick;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
@@ -15,7 +16,7 @@ import org.bukkit.event.player.PlayerQuitEvent;
 
 public class Events implements Listener {
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.HIGH)
     public void plrChat(AsyncPlayerChatEvent event) {
         if (!event.isCancelled()) {
             // add plr to Async chat queue

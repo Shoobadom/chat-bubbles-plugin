@@ -40,7 +40,7 @@
                         <relocation>
                             <pattern>org.bstats</pattern>
                             <!-- Replace this with your package! -->
-                            <shadedPattern>me.shoobadom.chat</shadedPattern>
+                            <shadedPattern>me.shoobadom.chatbubbles</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>

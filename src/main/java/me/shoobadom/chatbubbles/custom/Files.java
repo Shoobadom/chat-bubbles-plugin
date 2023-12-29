@@ -1,6 +1,6 @@
-package me.shoobadom.chat.custom;
+package me.shoobadom.chatbubbles.custom;
 
-import me.shoobadom.chat.ChatBubbles;
+import me.shoobadom.chatbubbles.ChatBubbles;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;

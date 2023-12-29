@@ -1,10 +1,10 @@
-package me.shoobadom.chat;
+package me.shoobadom.chatbubbles;
 
 
-import me.shoobadom.chat.commands.MainCommand;
-import me.shoobadom.chat.custom.Files;
-import me.shoobadom.chat.events.Events;
-import me.shoobadom.chat.scheduler.tick;
+import me.shoobadom.chatbubbles.commands.MainCommand;
+import me.shoobadom.chatbubbles.custom.Files;
+import me.shoobadom.chatbubbles.events.Events;
+import me.shoobadom.chatbubbles.scheduler.tick;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;

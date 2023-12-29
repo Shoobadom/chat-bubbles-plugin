@@ -1,4 +1,4 @@
-package me.shoobadom.chat.custom;
+package me.shoobadom.chatbubbles.custom;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Display;

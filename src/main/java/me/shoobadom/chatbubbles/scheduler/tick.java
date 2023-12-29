@@ -1,8 +1,8 @@
-package me.shoobadom.chat.scheduler;
+package me.shoobadom.chatbubbles.scheduler;
 
 
-import me.shoobadom.chat.ChatBubbles;
-import me.shoobadom.chat.custom.ChatBubble;
+import me.shoobadom.chatbubbles.ChatBubbles;
+import me.shoobadom.chatbubbles.custom.ChatBubble;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitScheduler;
 

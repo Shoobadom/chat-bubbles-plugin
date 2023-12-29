@@ -17,9 +17,11 @@ public class Events implements Listener {
 
     @EventHandler
     public void plrChat(AsyncPlayerChatEvent event) {
-        // add plr to Async chat queue
-        tick.addPlayerChat(event.getPlayer().getUniqueId(),event.getMessage());
-        event.setCancelled(!Files.getBool("display-message-in-chat"));
+        if (!event.isCancelled()) {
+            // add plr to Async chat queue
+            tick.addPlayerChat(event.getPlayer().getUniqueId(),event.getMessage());
+            event.setCancelled(!Files.getBool("display-message-in-chat"));
+        }
     }
 
     @EventHandler

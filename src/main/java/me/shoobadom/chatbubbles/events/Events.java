@@ -16,7 +16,7 @@ import org.bukkit.event.player.PlayerQuitEvent;
 
 public class Events implements Listener {
 
-    @EventHandler(priority = EventPriority.LOWEST)
+    @EventHandler(priority = EventPriority.LOW)
     public void plrChat(AsyncPlayerChatEvent event) {
         if (!event.isCancelled()) {
             // add plr to Async chat queue

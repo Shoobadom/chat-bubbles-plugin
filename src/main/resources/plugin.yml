@@ -1,6 +1,6 @@
 name: ShoobadomChatBubbles
 version: '${project.version}'
-main: me.shoobadom.chat.Chat
+main: me.shoobadom.chatbubbles.ChatBubbles
 api-version: '1.20'
 authors: [ Shoobadom ]
 description: Text bubbles

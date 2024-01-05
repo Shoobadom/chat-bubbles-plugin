@@ -1,6 +1,6 @@
-package me.shoobadom.chat.custom;
+package me.shoobadom.chatbubbles.custom;
 
-import me.shoobadom.chat.Chat;
+import me.shoobadom.chatbubbles.ChatBubbles;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Files {
 
-    private static final Chat instance = Chat.getInstance();
+    private static final ChatBubbles instance = ChatBubbles.getInstance();
     private static final File path = new File(instance.getDataFolder(),"fontWidths.txt");
 
     private static final Map<Character,Integer> fontWidths = new HashMap<>();
@@ -64,5 +64,8 @@ public class Files {
     }
     public static boolean getBool(String key) {
         return instance.getConfig().getBoolean(key);
+    }
+    public static String getString(String key) {
+        return instance.getConfig().getString(key);
     }
 }

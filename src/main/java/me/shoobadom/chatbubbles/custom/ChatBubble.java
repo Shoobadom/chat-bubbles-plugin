@@ -1,10 +1,11 @@
-package me.shoobadom.chat.custom;
+package me.shoobadom.chatbubbles.custom;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Display;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.TextDisplay;
 import org.bukkit.util.Transformation;
+import org.bukkit.util.Vector;
 import org.joml.AxisAngle4f;
 import org.joml.Vector3f;
 
@@ -26,6 +27,7 @@ public class ChatBubble {
     }
 
     public void newChat(String msg) {
+        msg = Files.getString("message-format").replace("%message%", msg);
 
         if (bubbles[bubbles.length-1] != null) {
             bubbles[bubbles.length-1].remove();
@@ -37,7 +39,7 @@ public class ChatBubble {
         }
 
         Location loc = p.getLocation();
-        TextDisplay td = p.getWorld().spawn(loc, TextDisplay.class);
+        TextDisplay td = p.getWorld().spawn(loc.setDirection(new Vector(90, 0, 0)), TextDisplay.class);
         td.setText(msg);
         td.setBillboard(Display.Billboard.VERTICAL);
         td.setTransformation(new Transformation(new Vector3f(0F,plrAdjustment,0F),new AxisAngle4f(),new Vector3f(1,1,1),new AxisAngle4f()));

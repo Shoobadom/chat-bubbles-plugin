@@ -1,13 +1,13 @@
-package me.shoobadom.chat.commands;
+package me.shoobadom.chatbubbles.commands;
 
-import me.shoobadom.chat.Chat;
+import me.shoobadom.chatbubbles.ChatBubbles;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
 public class MainCommand implements CommandExecutor {
-    private final Chat instance = Chat.getInstance();
+    private final ChatBubbles instance = ChatBubbles.getInstance();
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (!sender.isOp()) {

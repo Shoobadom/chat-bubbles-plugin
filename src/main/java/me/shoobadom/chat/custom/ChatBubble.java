@@ -13,7 +13,7 @@ public class ChatBubble {
     private final TextDisplay[] bubbles = new TextDisplay[Math.max(1,Files.getInt("bubble-count"))];
     private final int[] dur = new int[bubbles.length];
     private final Player p;
-    private final float plrAdjustment = (float) (1.1 + Files.getDouble("bubble-offset-from-player"));
+    private final float plrAdjustment = (float) (0.7 + Files.getDouble("bubble-offset-from-player"));
 
     private final float distanceBetweenBubbles = (float) Math.max(0.0,Files.getDouble("distance-between-bubbles"));
 

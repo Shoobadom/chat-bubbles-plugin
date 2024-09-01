@@ -53,7 +53,7 @@
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
 
-                            <outputFile>C:\Users\Samuel\Documents\Eclipse\.Server 1.20.1.2\plugins\${project.name}.jar</outputFile>
+                            <outputFile>C:\Users\Samuel\Documents\Eclipse\.Server 1.21.1\plugins\${project.name}.jar</outputFile>
                         </configuration>
                     </execution>
                 </executions>
@@ -87,7 +87,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.19.4-R0.1-SNAPSHOT</version>
+            <version>1.21.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 

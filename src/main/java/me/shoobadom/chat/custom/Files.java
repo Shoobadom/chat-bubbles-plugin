@@ -1,6 +1,7 @@
 package me.shoobadom.chat.custom;
 
 import me.shoobadom.chat.Chat;
+
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
@@ -44,6 +45,9 @@ public class Files {
 
     public static int readPixels(String str) {
         int total = 0;
+        if (str==null) {
+            return 0;
+        }
         for (int i=0;i<str.length();i++) {
             if (fontWidths.get(str.charAt(i)) != null) {
                 total += fontWidths.get(str.charAt(i));
